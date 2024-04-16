@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        html {
+            background-color: black;
+            width: 350px;
+            height: 350px;
+            font-family: "Garamond", serif;
+        }
+        button {
+            border: none;
+            font-family: "Garamond", serif !important;
+        }
+        button:hover {
+            cursor: pointer;
+        }
+        .headerTxt {
+            text-align: center;
+            font-family: "Garamond", serif;
+            color: #39ff14;
+        }
+        .resp {
+            text-align: center;
+            font-family: "Garamond", serif;
+            color: white;
+        }
+        .here {
+            text-align: center;
+        }
+        #copyButton {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #textBox {
+            border: 5px solid #39ff14;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 0 10px white;
+            font-family: "Garamond", serif !important;
+        }
+        #copySymb {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+        }
+        #clear {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        #tts {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        #search {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        #saveButton {
+            position: absolute;
+            left: 12px;
+            bottom: 175px;
+        }
+    </style>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="headerTxt"><h2>Duopad: Your Quick Notepad</h2></div>
+        <button id="copyButton"><img src="copySym.jpeg" id="copySymb" alt="copy button" title="copy button" /></button>
+        <button id="saveButton">Save</button>
+        <button id="clear">Clear</button>
+        <button id="tts">Text To Speech</button>
+        <button id="search">Exit</button>
+        <div class="here"><textarea id="textBox"></textarea></div>
+        <div class="resp"><h3 id="response"></h3></div>
+    </body>
+    <script src="main.js"></script>
+</html>
